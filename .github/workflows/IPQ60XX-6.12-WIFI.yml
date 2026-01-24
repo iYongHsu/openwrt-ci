@@ -92,9 +92,8 @@ jobs:
       run: |
         cd $OPENWRT_PATH
         echo >> feeds.conf.default
-        echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
-        echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git' >> feeds.conf.default
-        echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' >> feeds.conf.default
+        echo 'src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git' >> feeds.conf.default
+        echo 'src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2.git' >> feeds.conf.default
         ./scripts/feeds update -a
         # git clone --depth 1 https://github.com/sbwml/openwrt_pkgs.git package/new/custom
         # mv package/new/custom/luci-app-netspeedtest  package/new
